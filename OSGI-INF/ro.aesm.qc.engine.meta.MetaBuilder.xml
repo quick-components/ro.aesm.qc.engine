@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="ro.aesm.qc.engine.meta.MetaBuilder">
+   <service>
+      <provide interface="ro.aesm.qc.api.meta.IMetaBuilder"/>
+   </service>
+   <reference cardinality="1..1" field="cache" interface="ro.aesm.qc.api.meta.IMetaCache" name="cache"/>
+   <reference cardinality="0..n" field="compilers" interface="ro.aesm.qc.api.meta.component.IMetaComponentCompiler" name="compilers"/>
+   <reference cardinality="0..n" field="contentProviders" interface="ro.aesm.qc.api.base.IModuleContentProvider" name="contentProviders"/>
+   <reference cardinality="1..1" field="resourceParser" interface="ro.aesm.qc.api.meta.IMetaResourceParser" name="resourceParser"/>
+   <implementation class="ro.aesm.qc.engine.meta.MetaBuilder"/>
+</scr:component>

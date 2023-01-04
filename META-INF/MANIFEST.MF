@@ -1,0 +1,20 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: QC framework execution engine
+Bundle-SymbolicName: ro.aesm.qc.engine
+Bundle-Version: 0.0.1.qualifier
+Import-Package: org.osgi.framework;version="1.10.0",
+ org.osgi.service.component.annotations;version="1.5.0";resolution:=optional,
+ ro.aesm.qc.api,
+ ro.aesm.qc.api.base,
+ ro.aesm.qc.api.exception,
+ ro.aesm.qc.api.meta,
+ ro.aesm.qc.api.meta.component,
+ ro.aesm.qc.base,
+ ro.aesm.qc.base.util
+Automatic-Module-Name: ro.aesm.qc.engine
+Bundle-RequiredExecutionEnvironment: JavaSE-11
+Bundle-ActivationPolicy: lazy
+Service-Component: OSGI-INF/ro.aesm.qc.engine.meta.MetaBuilder.xml,
+ OSGI-INF/ro.aesm.qc.engine.meta.MetaCache.xml,
+ OSGI-INF/ro.aesm.qc.engine.meta.MetaResourceParser.xml

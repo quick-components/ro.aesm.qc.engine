@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" name="ro.aesm.qc.engine.meta.MetaCache">
+   <service>
+      <provide interface="ro.aesm.qc.api.meta.IMetaCache"/>
+   </service>
+   <implementation class="ro.aesm.qc.engine.meta.MetaCache"/>
+</scr:component>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="ro.aesm.qc.engine.meta.MetaResourceParser">
+   <service>
+      <provide interface="ro.aesm.qc.api.meta.IMetaResourceParser"/>
+   </service>
+   <reference cardinality="0..n" field="parsers" interface="ro.aesm.qc.api.meta.component.IMetaComponentParser" name="parsers"/>
+   <implementation class="ro.aesm.qc.engine.meta.MetaResourceParser"/>
+</scr:component>
